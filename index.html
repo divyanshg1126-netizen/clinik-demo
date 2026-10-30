@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Clinic Name] | Nephrology & Kidney Care Clinic in [City]</title>
+  <meta name="description" content="[Clinic Name] offers expert kidney care in [City]: nephrology consultation, dialysis, stone management, hypertension care and transplant follow-up. Book an appointment online." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="[Clinic Name] – Your Health Partner" />
+  <meta property="og:description" content="Expert, compassionate kidney care. Book your appointment today." />
+  <meta property="og:image" content="https://example.com/og-image.jpg" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        colors: { brand: { 50:'#f0fdfa', 100:'#ccfbf1', 600:'#0d9488', 700:'#0f766e', 800:'#115e59', 900:'#134e4a' } }
+      } }
+    }
+  </script>
+  <style>
+    .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+    .js .reveal.is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto !important; }
+      .js .reveal { opacity: 1; transform: none; transition: none; }
+    }
+    section[id] { scroll-margin-top: 5rem; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "[Clinic Name]",
+    "medicalSpecialty": "Nephrology",
+    "url": "https://example.com",
+    "telephone": "+91-98765-43210",
+    "email": "care@example.com",
+    "priceRange": "₹₹",
+    "image": "https://example.com/og-image.jpg",
+    "address": { "@type": "PostalAddress", "streetAddress": "[Street Address]", "addressLocality": "[City]", "addressRegion": "[State]", "postalCode": "[PIN]", "addressCountry": "IN" },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "19:00" }
+    ]
+  }
+  </script>
+</head>
+<body class="font-sans text-slate-700 bg-white antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg focus:shadow">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#home" class="text-xl font-extrabold text-brand-800 tracking-tight">[Clinic Name]<span class="text-amber-500">.</span></a>
+      <nav aria-label="Primary" class="hidden lg:flex items-center gap-7 text-sm font-medium">
+        <a class="hover:text-brand-700" href="#home">Home</a>
+        <a class="hover:text-brand-700" href="#about">About</a>
+        <a class="hover:text-brand-700" href="#doctors">Doctors</a>
+        <a class="hover:text-brand-700" href="#services">Services</a>
+        <a class="hover:text-brand-700" href="#testimonials">Testimonials</a>
+        <a class="hover:text-brand-700" href="#contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="#appointment" class="hidden sm:inline-block bg-amber-400 hover:bg-amber-300 text-slate-900 font-semibold px-5 py-2.5 rounded-full text-sm shadow-sm transition">Book Appointment</a>
+        <button id="menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-slate-100" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-menu" aria-label="Mobile" class="hidden lg:hidden border-t border-slate-100 bg-white px-4 py-3 space-y-1 text-base font-medium">
+      <a class="block py-2" href="#home">Home</a>
+      <a class="block py-2" href="#about">About</a>
+      <a class="block py-2" href="#doctors">Doctors</a>
+      <a class="block py-2" href="#services">Services</a>
+      <a class="block py-2" href="#testimonials">Testimonials</a>
+      <a class="block py-2" href="#contact">Contact</a>
+      <a href="#appointment" class="block text-center bg-amber-400 text-slate-900 font-semibold py-3 rounded-full mt-2">Book Appointment</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="bg-gradient-to-b from-brand-50 to-white">
+      <div class="max-w-6xl mx-auto px-4 py-14 lg:py-20 grid lg:grid-cols-2 gap-10 items-center">
+        <div class="reveal">
+          <p class="inline-block bg-brand-100 text-brand-800 text-xs font-semibold px-3 py-1 rounded-full mb-4">Kidney &amp; Hypertension Specialists · [City]</p>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 leading-tight">[Clinic Name]<br /><span class="text-brand-700">Your Health Partner</span></h1>
+          <p class="mt-5 text-lg text-slate-600 max-w-xl">Specialist kidney care that listens first. From early screening to dialysis and transplant follow-up, we guide you and your family at every step, with clear answers and honest advice.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#appointment" class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-semibold px-7 py-3.5 rounded-full shadow transition">Book Appointment</a>
+            <a href="tel:+919876543210" class="border-2 border-brand-700 text-brand-700 hover:bg-brand-700 hover:text-white font-semibold px-7 py-3.5 rounded-full transition">Call Now</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <img src="assets/hero.svg" width="640" height="480" alt="Placeholder illustration of a doctor consulting a patient" class="w-full rounded-3xl shadow-xl" />
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section aria-label="Clinic highlights" class="max-w-6xl mx-auto px-4 -mt-2">
+      <dl class="reveal grid grid-cols-2 md:grid-cols-4 gap-4 bg-white rounded-2xl shadow-lg border border-slate-100 p-6 text-center">
+        <div><dt class="text-sm text-slate-500">Years of Experience</dt><dd class="text-3xl font-extrabold text-brand-700">[20]+</dd></div>
+        <div><dt class="text-sm text-slate-500">Patients Treated</dt><dd class="text-3xl font-extrabold text-brand-700">[15,000]+</dd></div>
+        <div><dt class="text-sm text-slate-500">Specialties</dt><dd class="text-3xl font-extrabold text-brand-700">[6]</dd></div>
+        <div><dt class="text-sm text-slate-500">Patient Rating</dt><dd class="text-3xl font-extrabold text-brand-700">[4.9] <span class="text-amber-500" aria-hidden="true">★</span></dd></div>
+      </dl>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-6xl mx-auto px-4 py-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <h2 class="text-3xl font-bold text-slate-900">About [Clinic Name]</h2>
+          <p class="mt-4"><strong class="text-slate-900">Our mission:</strong> to make advanced kidney care accessible, understandable and humane for every family in [City] and beyond.</p>
+          <p class="mt-3"><strong class="text-slate-900">Our approach:</strong> we treat the person, not just the report. Every plan is explained in plain language, built around your lifestyle, and reviewed regularly so you always know what comes next.</p>
+        </div>
+        <ul class="reveal grid sm:grid-cols-2 gap-4">
+          <li class="bg-brand-50 rounded-2xl p-5"><span aria-hidden="true" class="text-2xl">🏥</span><h3 class="font-semibold text-slate-900 mt-2">Modern Dialysis Unit</h3><p class="text-sm mt-1">Hygienic, comfortable and monitored by trained technicians.</p></li>
+          <li class="bg-brand-50 rounded-2xl p-5"><span aria-hidden="true" class="text-2xl">🔬</span><h3 class="font-semibold text-slate-900 mt-2">In-house Diagnostics</h3><p class="text-sm mt-1">Blood, urine and ultrasound tests with quick reports.</p></li>
+          <li class="bg-brand-50 rounded-2xl p-5"><span aria-hidden="true" class="text-2xl">♿</span><h3 class="font-semibold text-slate-900 mt-2">Accessible Facility</h3><p class="text-sm mt-1">Ramps, lift access and a calm waiting area.</p></li>
+          <li class="bg-brand-50 rounded-2xl p-5"><span aria-hidden="true" class="text-2xl">🚑</span><h3 class="font-semibold text-slate-900 mt-2">Emergency Support</h3><p class="text-sm mt-1">Coordination with partner hospitals for urgent care.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DOCTORS -->
+    <section id="doctors" class="bg-slate-50 py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-slate-900 text-center reveal">Meet Our Doctors</h2>
+        <p class="text-center mt-3 max-w-2xl mx-auto reveal">Experienced specialists who combine clinical expertise with a patient-first attitude.</p>
+        <div class="mt-12 grid md:grid-cols-3 gap-6">
+          <article class="reveal bg-white rounded-2xl shadow-sm hover:shadow-lg transition p-6 text-center">
+            <img src="assets/avatar.svg" loading="lazy" width="112" height="112" alt="Placeholder portrait of Dr. [Rajesh Sharma]" class="w-28 h-28 rounded-full mx-auto" />
+            <h3 class="mt-4 text-lg font-bold text-slate-900">Dr. [Rajesh Sharma]</h3>
+            <p class="text-sm font-medium text-brand-700">MBBS, MD, DM (Nephrology)</p>
+            <p class="text-xs text-slate-500">Senior Consultant Nephrologist</p>
+            <p class="mt-3 text-sm">[20+] years of experience in dialysis, kidney transplant and chronic kidney disease management.</p>
+            <a href="#" class="inline-block mt-4 text-sm font-semibold text-brand-700 hover:underline">View Profile →</a>
+          </article>
+          <article class="reveal bg-white rounded-2xl shadow-sm hover:shadow-lg transition p-6 text-center">
+            <img src="assets/avatar.svg" loading="lazy" width="112" height="112" alt="Placeholder portrait of Dr. [Anita Verma]" class="w-28 h-28 rounded-full mx-auto" />
+            <h3 class="mt-4 text-lg font-bold text-slate-900">Dr. [Anita Verma]</h3>
+            <p class="text-sm font-medium text-brand-700">MBBS, MD (Medicine), DNB (Nephrology)</p>
+            <p class="text-xs text-slate-500">Consultant Nephrologist</p>
+            <p class="mt-3 text-sm">Focuses on diabetic kidney disease, hypertension and preventive nephrology.</p>
+            <a href="#" class="inline-block mt-4 text-sm font-semibold text-brand-700 hover:underline">View Profile →</a>
+          </article>
+          <article class="reveal bg-white rounded-2xl shadow-sm hover:shadow-lg transition p-6 text-center">
+            <img src="assets/avatar.svg" loading="lazy" width="112" height="112" alt="Placeholder portrait of Dr. [Sanjay Gupta]" class="w-28 h-28 rounded-full mx-auto" />
+            <h3 class="mt-4 text-lg font-bold text-slate-900">Dr. [Sanjay Gupta]</h3>
+            <p class="text-sm font-medium text-brand-700">MBBS, MS, MCh (Urology)</p>
+            <p class="text-xs text-slate-500">Consultant Urologist</p>
+            <p class="mt-3 text-sm">Expert in minimally invasive kidney stone treatment and urological surgery.</p>
+            <a href="#" class="inline-block mt-4 text-sm font-semibold text-brand-700 hover:underline">View Profile →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="max-w-6xl mx-auto px-4 py-20">
+      <h2 class="text-3xl font-bold text-slate-900 text-center reveal">Our Services</h2>
+      <p class="text-center mt-3 max-w-2xl mx-auto reveal">Complete kidney care under one roof.</p>
+      <ul class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <li class="reveal group border border-slate-100 rounded-2xl p-6 hover:border-brand-600 hover:shadow-lg transition"><span aria-hidden="true" class="text-3xl">🩺</span><h3 class="mt-3 font-bold text-slate-900">Nephrology Consultation</h3><p class="text-sm mt-1">Expert diagnosis and personalised kidney treatment plans.</p></li>
+        <li class="reveal group border border-slate-100 rounded-2xl p-6 hover:border-brand-600 hover:shadow-lg transition"><span aria-hidden="true" class="text-3xl">💧</span><h3 class="mt-3 font-bold text-slate-900">Dialysis</h3><p class="text-sm mt-1">Safe haemodialysis and peritoneal dialysis support.</p></li>
+        <li class="reveal group border border-slate-100 rounded-2xl p-6 hover:border-brand-600 hover:shadow-lg transition"><span aria-hidden="true" class="text-3xl">🪨</span><h3 class="mt-3 font-bold text-slate-900">Kidney Stone Management</h3><p class="text-sm mt-1">Medical and minimally invasive treatment options.</p></li>
+        <li class="reveal group border border-slate-100 rounded-2xl p-6 hover:border-brand-600 hover:shadow-lg transition"><span aria-hidden="true" class="text-3xl">❤️</span><h3 class="mt-3 font-bold text-slate-900">Hypertension Care</h3><p class="text-sm mt-1">Blood pressure control that protects your kidneys.</p></li>
+        <li class="reveal group border border-slate-100 rounded-2xl p-6 hover:border-brand-600 hover:shadow-lg transition"><span aria-hidden="true" class="text-3xl">🔄</span><h3 class="mt-3 font-bold text-slate-900">Transplant Follow-up</h3><p class="text-sm mt-1">Lifelong monitoring for transplant recipients.</p></li>
+        <li class="reveal group border border-slate-100 rounded-2xl p-6 hover:border-brand-600 hover:shadow-lg transition"><span aria-hidden="true" class="text-3xl">📋</span><h3 class="mt-3 font-bold text-slate-900">Preventive Health Checkups</h3><p class="text-sm mt-1">Early screening packages for kidney and heart health.</p></li>
+      </ul>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="bg-brand-800 text-white py-20" aria-labelledby="why-title">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 id="why-title" class="text-3xl font-bold text-center reveal">Why Choose Us</h2>
+        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="reveal bg-white/10 rounded-2xl p-6"><h3 class="font-bold">Specialist-led Care</h3><p class="text-sm mt-2 text-brand-100">Every case is handled by a qualified nephrologist.</p></div>
+          <div class="reveal bg-white/10 rounded-2xl p-6"><h3 class="font-bold">Transparent Pricing</h3><p class="text-sm mt-2 text-brand-100">Clear estimates in ₹ before any procedure.</p></div>
+          <div class="reveal bg-white/10 rounded-2xl p-6"><h3 class="font-bold">Time to Listen</h3><p class="text-sm mt-2 text-brand-100">Unhurried consultations and plain-language explanations.</p></div>
+          <div class="reveal bg-white/10 rounded-2xl p-6"><h3 class="font-bold">Continuity of Care</h3><p class="text-sm mt-2 text-brand-100">Reminders and follow-ups on WhatsApp and phone.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="max-w-6xl mx-auto px-4 py-20">
+      <h2 class="text-3xl font-bold text-slate-900 text-center reveal">What Our Patients Say</h2>
+      <p class="text-center text-xs text-slate-500 mt-2">Placeholder testimonials for demonstration.</p>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <figure class="reveal bg-slate-50 rounded-2xl p-6">
+          <div class="text-amber-500" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="mt-3 text-sm">“The doctor explained my reports patiently and my creatinine is now under control.”</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-slate-900">[Ramesh Kumar], [City]</figcaption>
+        </figure>
+        <figure class="reveal bg-slate-50 rounded-2xl p-6">
+          <div class="text-amber-500" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="mt-3 text-sm">“Dialysis for my father was comfortable, and the staff treated him like family.”</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-slate-900">[Priya Singh], [City]</figcaption>
+        </figure>
+        <figure class="reveal bg-slate-50 rounded-2xl p-6">
+          <div class="text-amber-500" role="img" aria-label="4 out of 5 stars">★★★★☆</div>
+          <blockquote class="mt-3 text-sm">“Clear pricing and quick appointments. Follow-up reminders are very helpful.”</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-slate-900">[Mohammed Iqbal], [City]</figcaption>
+        </figure>
+        <figure class="reveal bg-slate-50 rounded-2xl p-6">
+          <div class="text-amber-500" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="mt-3 text-sm">“Three years after my transplant, I still trust this team with my care.”</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-slate-900">[Sunita Patel], [City]</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- APPOINTMENT -->
+    <section id="appointment" class="bg-brand-50 py-20">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-slate-900 text-center reveal">Book an Appointment</h2>
+        <p class="text-center mt-3 reveal">Fill in the form and our team will confirm your slot by phone.</p>
+        <form id="appt-form" novalidate class="reveal mt-10 bg-white rounded-2xl shadow-lg p-6 sm:p-8 grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="name" class="block text-sm font-semibold text-slate-900">Full Name *</label>
+            <input id="name" name="name" type="text" required autocomplete="name" aria-describedby="name-err" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-600" />
+            <p id="name-err" class="err text-sm text-red-700 mt-1 hidden"></p>
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-semibold text-slate-900">Phone *</label>
+            <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="+91 98765 43210" aria-describedby="phone-err" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-600" />
+            <p id="phone-err" class="err text-sm text-red-700 mt-1 hidden"></p>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="email" class="block text-sm font-semibold text-slate-900">Email *</label>
+            <input id="email" name="email" type="email" required autocomplete="email" aria-describedby="email-err" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-600" />
+            <p id="email-err" class="err text-sm text-red-700 mt-1 hidden"></p>
+          </div>
+          <div>
+            <label for="date" class="block text-sm font-semibold text-slate-900">Preferred Date *</label>
+            <input id="date" name="date" type="date" required aria-describedby="date-err" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-600" />
+            <p id="date-err" class="err text-sm text-red-700 mt-1 hidden"></p>
+          </div>
+          <div>
+            <label for="time" class="block text-sm font-semibold text-slate-900">Preferred Time *</label>
+            <select id="time" name="time" required aria-describedby="time-err" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-brand-600">
+              <option value="">Select a slot</option>
+              <option>09:00 AM – 11:00 AM</option>
+              <option>11:00 AM – 01:00 PM</option>
+              <option>03:00 PM – 05:00 PM</option>
+              <option>05:00 PM – 07:00 PM</option>
+            </select>
+            <p id="time-err" class="err text-sm text-red-700 mt-1 hidden"></p>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="service" class="block text-sm font-semibold text-slate-900">Service *</label>
+            <select id="service" name="service" required aria-describedby="service-err" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-brand-600">
+              <option value="">Select a service</option>
+              <option>Nephrology Consultation</option>
+              <option>Dialysis</option>
+              <option>Kidney Stone Management</option>
+              <option>Hypertension Care</option>
+              <option>Transplant Follow-up</option>
+              <option>Preventive Health Checkup</option>
+            </select>
+            <p id="service-err" class="err text-sm text-red-700 mt-1 hidden"></p>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="message" class="block text-sm font-semibold text-slate-900">Message (optional)</label>
+            <textarea id="message" name="message" rows="3" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-600"></textarea>
+          </div>
+          <div class="sm:col-span-2">
+            <button type="submit" class="w-full bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold py-3.5 rounded-full shadow transition">Request Appointment</button>
+            <p class="text-xs text-slate-500 mt-3 text-center">For medical emergencies, call [Emergency Number] or visit the nearest hospital.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-6xl mx-auto px-4 py-20">
+      <h2 class="text-3xl font-bold text-slate-900 text-center reveal">Contact &amp; Visit Us</h2>
+      <div class="mt-12 grid lg:grid-cols-2 gap-8">
+        <div class="reveal space-y-6">
+          <address class="not-italic space-y-2">
+            <p><strong class="text-slate-900">Address:</strong> [Clinic Name], [Street Address], [Locality], [City] – [PIN]</p>
+            <p><strong class="text-slate-900">Phone:</strong> <a class="text-brand-700 hover:underline" href="tel:+919876543210">+91 98765 43210</a></p>
+            <p><strong class="text-slate-900">Email:</strong> <a class="text-brand-700 hover:underline" href="mailto:care@example.com">care@example.com</a></p>
+          </address>
+          <table class="w-full text-sm border border-slate-100 rounded-xl overflow-hidden">
+            <caption class="text-left font-semibold text-slate-900 pb-2">Clinic Hours</caption>
+            <tbody class="divide-y divide-slate-100">
+              <tr><th scope="row" class="text-left font-medium py-2 px-3 bg-slate-50">Mon – Fri</th><td class="py-2 px-3">9:00 AM – 7:00 PM</td></tr>
+              <tr><th scope="row" class="text-left font-medium py-2 px-3 bg-slate-50">Saturday</th><td class="py-2 px-3">9:00 AM – 2:00 PM</td></tr>
+              <tr><th scope="row" class="text-left font-medium py-2 px-3 bg-slate-50">Sunday</th><td class="py-2 px-3">Emergency / by appointment</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Replace this box with a Google Maps <iframe loading="lazy" title="Clinic location map" ...> -->
+        <div class="reveal min-h-[18rem] rounded-2xl bg-slate-100 border-2 border-dashed border-slate-300 flex items-center justify-center text-slate-500 font-semibold" role="img" aria-label="Map placeholder">Map</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid sm:grid-cols-3 gap-8">
+      <div>
+        <p class="text-xl font-extrabold text-white">[Clinic Name]<span class="text-amber-400">.</span></p>
+        <p class="text-sm mt-2">Your Health Partner for life-long kidney care.</p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="font-semibold text-white mb-2">Quick Links</p>
+        <ul class="space-y-1 text-sm">
+          <li><a class="hover:text-white" href="#about">About</a></li>
+          <li><a class="hover:text-white" href="#doctors">Doctors</a></li>
+          <li><a class="hover:text-white" href="#services">Services</a></li>
+          <li><a class="hover:text-white" href="#appointment">Book Appointment</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="font-semibold text-white mb-2">Follow Us</p>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Facebook" class="w-9 h-9 grid place-items-center rounded-full bg-slate-800 hover:bg-brand-700 font-bold">f</a>
+          <a href="#" aria-label="Instagram" class="w-9 h-9 grid place-items-center rounded-full bg-slate-800 hover:bg-brand-700 font-bold">ig</a>
+          <a href="#" aria-label="YouTube" class="w-9 h-9 grid place-items-center rounded-full bg-slate-800 hover:bg-brand-700 font-bold">▶</a>
+          <a href="#" aria-label="WhatsApp" class="w-9 h-9 grid place-items-center rounded-full bg-slate-800 hover:bg-brand-700 font-bold">wa</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 text-xs text-center py-4">
+      © <span id="year">2026</span> [Clinic Name]. All rights reserved. · <a href="#" class="hover:text-white">Privacy Policy</a> · <a href="#" class="hover:text-white">Terms</a>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" role="status" aria-live="polite" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[60] hidden bg-brand-800 text-white px-6 py-3 rounded-full shadow-xl text-sm max-w-[90vw]"></div>
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
